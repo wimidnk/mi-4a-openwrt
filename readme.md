@@ -1,3 +1,7 @@
+---------------------------
+Flashing OpenWRT to Xiaomi Router 4a (Gigabit Edition)
+---------------------------
+
 This is a basic tutorial to reflash Xiaomi Router 4a Gigabit Edition and install OpenWRT firmware using OpenWRTInvation Exploit tool.
 
 Before going any further in this tutorial,
@@ -40,7 +44,7 @@ dnsmasq-tftp: sent /home/nm/tftp/test.bin to 192.168.0.206
 Flashing OpenWRT using OpenWRTInvation tool.
 ----------------------------------------------
 
-- git clone as instructed from acecilia github page (linked above)
+- git clone as instructed from acecilia github ('http://github.com/acecilia/OpenWRTInvasion')
 - install python3 pip and other requirments as instructed
 - cd to your OpenWRTInvation folder then
 
@@ -57,7 +61,7 @@ cd /tmp
 ( I have tried the default firmware but it does not have luci included, and cant install using opkg because of mismatch dependencies. User:zorro have created another custom firmware, that is linked here.)
 - I have range issues in this OpenWrt firmware. And didn't check 5Ghz support yet.
 
-curl http://download1815.mediafire.com/63tq9zb6nlug/0qetz7rm8n9hr04/openwrt-ramips-mt7621-xiaomi_mir3g-v2-squashfs-sysupgrade.bin --output firmware.bin
+curl https://github.com/wimidnk/mi-4a-openwrt/raw/master/files/openwrt-ramips-mt7621-xiaomi_mir3g-v2-squashfs-sysupgrade.bin --output firmware.bin
 
 (in case mediafire link expires, I've uploaded these files in the "Files" Folder)
 - Flash this firmware using this command. This will Erase OS1 and flash this custom firmware to mi-wifi
@@ -68,3 +72,4 @@ mtd -e OS1 -r write firmware.bin OS1
 - Now set your lan ip to 192.168.1.2
 - Go to 192.168.1.1 to access your OpenWRT
 
+Enjoy!
