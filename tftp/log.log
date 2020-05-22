@@ -1,0 +1,138 @@
+nm@nm-pc:~$ ip a
+1: lo: <LOOPBACK,UP,LOWER_UP> mtu 65536 qdisc noqueue state UNKNOWN group default qlen 1000
+    link/loopback 00:00:00:00:00:00 brd 00:00:00:00:00:00
+    inet 127.0.0.1/8 scope host lo
+       valid_lft forever preferred_lft forever
+    inet6 ::1/128 scope host 
+       valid_lft forever preferred_lft forever
+2: enp3s0: <NO-CARRIER,BROADCAST,MULTICAST,UP> mtu 1500 qdisc pfifo_fast state DOWN group default qlen 1000
+    link/ether 98:4b:e1:ee:9d:9e brd ff:ff:ff:ff:ff:ff
+3: wlp1s0: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc pfifo_fast state UP group default qlen 1000
+    link/ether e0:2a:82:fd:51:34 brd ff:ff:ff:ff:ff:ff
+    inet 192.168.31.251/24 brd 192.168.31.255 scope global dynamic noprefixroute wlp1s0
+       valid_lft 42976sec preferred_lft 42976sec
+    inet6 fe80::82ab:5847:c9fd:2774/64 scope link noprefixroute 
+       valid_lft forever preferred_lft forever
+nm@nm-pc:~$ mkdir tftp
+nm@nm-pc:~$ cd tftp/
+nm@nm-pc:~/tftp$ mv miwifi_r4a_firmware_72d65_2.28.62.bin test.bin
+nm@nm-pc:~/tftp$ sudo su
+root@nm-pc:/home/nm/tftp# ip a
+1: lo: <LOOPBACK,UP,LOWER_UP> mtu 65536 qdisc noqueue state UNKNOWN group default qlen 1000
+    link/loopback 00:00:00:00:00:00 brd 00:00:00:00:00:00
+    inet 127.0.0.1/8 scope host lo
+       valid_lft forever preferred_lft forever
+    inet6 ::1/128 scope host 
+       valid_lft forever preferred_lft forever
+2: enp3s0: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc pfifo_fast state UP group default qlen 1000
+    link/ether 98:4b:e1:ee:9d:9e brd ff:ff:ff:ff:ff:ff
+    inet 192.168.31.251/24 brd 192.168.31.255 scope global noprefixroute enp3s0
+       valid_lft forever preferred_lft forever
+    inet6 fe80::ef1:4f04:9b7f:7ea6/64 scope link noprefixroute 
+       valid_lft forever preferred_lft forever
+3: wlp1s0: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc pfifo_fast state UP group default qlen 1000
+    link/ether e0:2a:82:fd:51:34 brd ff:ff:ff:ff:ff:ff
+    inet 192.168.31.251/24 brd 192.168.31.255 scope global dynamic noprefixroute wlp1s0
+       valid_lft 42625sec preferred_lft 42625sec
+    inet6 fe80::82ab:5847:c9fd:2774/64 scope link noprefixroute 
+       valid_lft forever preferred_lft forever
+root@nm-pc:/home/nm/tftp# ip a
+1: lo: <LOOPBACK,UP,LOWER_UP> mtu 65536 qdisc noqueue state UNKNOWN group default qlen 1000
+    link/loopback 00:00:00:00:00:00 brd 00:00:00:00:00:00
+    inet 127.0.0.1/8 scope host lo
+       valid_lft forever preferred_lft forever
+    inet6 ::1/128 scope host 
+       valid_lft forever preferred_lft forever
+2: enp3s0: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc pfifo_fast state UP group default qlen 1000
+    link/ether 98:4b:e1:ee:9d:9e brd ff:ff:ff:ff:ff:ff
+    inet 192.168.31.251/24 brd 192.168.31.255 scope global noprefixroute enp3s0
+       valid_lft forever preferred_lft forever
+    inet6 fe80::ef1:4f04:9b7f:7ea6/64 scope link noprefixroute 
+       valid_lft forever preferred_lft forever
+3: wlp1s0: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc pfifo_fast state UP group default qlen 1000
+    link/ether e0:2a:82:fd:51:34 brd ff:ff:ff:ff:ff:ff
+    inet 192.168.31.251/24 brd 192.168.31.255 scope global dynamic noprefixroute wlp1s0
+       valid_lft 42465sec preferred_lft 42465sec
+    inet6 fe80::82ab:5847:c9fd:2774/64 scope link noprefixroute 
+       valid_lft forever preferred_lft forever
+root@nm-pc:/home/nm/tftp# ip a
+1: lo: <LOOPBACK,UP,LOWER_UP> mtu 65536 qdisc noqueue state UNKNOWN group default qlen 1000
+    link/loopback 00:00:00:00:00:00 brd 00:00:00:00:00:00
+    inet 127.0.0.1/8 scope host lo
+       valid_lft forever preferred_lft forever
+    inet6 ::1/128 scope host 
+       valid_lft forever preferred_lft forever
+2: enp3s0: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc pfifo_fast state UP group default qlen 1000
+    link/ether 98:4b:e1:ee:9d:9e brd ff:ff:ff:ff:ff:ff
+    inet 192.168.31.251/24 brd 192.168.31.255 scope global noprefixroute enp3s0
+       valid_lft forever preferred_lft forever
+    inet6 fe80::ef1:4f04:9b7f:7ea6/64 scope link noprefixroute 
+       valid_lft forever preferred_lft forever
+3: wlp1s0: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc pfifo_fast state UP group default qlen 1000
+    link/ether e0:2a:82:fd:51:34 brd ff:ff:ff:ff:ff:ff
+    inet 192.168.31.251/24 brd 192.168.31.255 scope global dynamic noprefixroute wlp1s0
+       valid_lft 42410sec preferred_lft 42410sec
+    inet6 fe80::82ab:5847:c9fd:2774/64 scope link noprefixroute 
+       valid_lft forever preferred_lft forever
+root@nm-pc:/home/nm/tftp# dnsmasq -i enp3s0 --dhcp-range=192.168.0.100,192.168.0.254 --dhcp-boot=test.bin --enable-tftp --tftp-root=/tftp/ -d -u nm -p0 -K --log-dhcp --bootp-dynamic
+
+dnsmasq: TFTP directory /tftp/ inaccessible: No such file or directory
+root@nm-pc:/home/nm/tftp# cd ..
+root@nm-pc:/home/nm# dnsmasq -i enp3s0 --dhcp-range=192.168.0.100,192.168.0.254 --dhcp-boot=test.bin --enable-tftp --tftp-root=/tftp/ -d -u nm -p0 -K --log-dhcp --bootp-dynamic
+
+dnsmasq: TFTP directory /tftp/ inaccessible: No such file or directory
+root@nm-pc:/home/nm# dnsmasq -i enp3s0 --dhcp-range=192.168.0.100,192.168.0.254 --dhcp-boot=test.bin --enable-tftp --tftp-root=~/tftp/ -d -u nm -p0 -K --log-dhcp --bootp-dynamic
+
+dnsmasq: TFTP directory ~/tftp/ inaccessible: No such file or directory
+root@nm-pc:/home/nm# dnsmasq -i enp3s0 --dhcp-range=192.168.0.100,192.168.0.254 --dhcp-boot=test.bin --enable-tftp --tftp-root=/home/nm/tftp/ -d -u nm -p0 -K --log-dhcp --bootp-dynamic   
+dnsmasq: started, version 2.80 DNS disabled
+dnsmasq: compile time options: IPv6 GNU-getopt DBus i18n IDN DHCP DHCPv6 no-Lua TFTP conntrack ipset auth DNSSEC loop-detect inotify dumpfile
+dnsmasq-dhcp: DHCP, IP range 192.168.0.100 -- 192.168.0.254, lease time 1h
+dnsmasq-tftp: TFTP root is /home/nm/tftp/ 
+dnsmasq-dhcp: no address range available for DHCP request via enp3s0
+dnsmasq-dhcp: no address range available for DHCP request via enp3s0
+dnsmasq-dhcp: no address range available for DHCP request via enp3s0
+dnsmasq-dhcp: no address range available for DHCP request via enp3s0
+dnsmasq-dhcp: no address range available for DHCP request via enp3s0
+dnsmasq-dhcp: no address range available for DHCP request via enp3s0
+
+
+
+
+
+
+
+
+dnsmasq-dhcp: 2875388644 available DHCP range: 192.168.0.100 -- 192.168.0.254
+dnsmasq-dhcp: 2875388644 DHCPDISCOVER(enp3s0) 00:00:aa:bb:cc:dd 
+dnsmasq-dhcp: 2875388644 tags: enp3s0
+dnsmasq-dhcp: 2875388644 DHCPOFFER(enp3s0) 192.168.0.206 00:00:aa:bb:cc:dd 
+dnsmasq-dhcp: 2875388644 requested options: 1:netmask, 3:router, 12:hostname, 17:root-path
+dnsmasq-dhcp: 2875388644 bootfile name: test.bin
+dnsmasq-dhcp: 2875388644 next server: 192.168.0.100
+dnsmasq-dhcp: 2875388644 sent size:  1 option: 53 message-type  2
+dnsmasq-dhcp: 2875388644 sent size:  4 option: 54 server-identifier  192.168.0.100
+dnsmasq-dhcp: 2875388644 sent size:  4 option: 51 lease-time  1h
+dnsmasq-dhcp: 2875388644 sent size:  4 option: 58 T1  30m
+dnsmasq-dhcp: 2875388644 sent size:  4 option: 59 T2  52m30s
+dnsmasq-dhcp: 2875388644 sent size:  4 option:  1 netmask  255.255.255.0
+dnsmasq-dhcp: 2875388644 sent size:  4 option: 28 broadcast  192.168.0.255
+dnsmasq-dhcp: 2875388644 sent size:  4 option:  3 router  192.168.0.100
+dnsmasq-dhcp: 2875388644 available DHCP range: 192.168.0.100 -- 192.168.0.254
+dnsmasq-dhcp: 2875388644 DHCPREQUEST(enp3s0) 192.168.0.206 00:00:aa:bb:cc:dd 
+dnsmasq-dhcp: 2875388644 tags: enp3s0
+dnsmasq-dhcp: 2875388644 DHCPACK(enp3s0) 192.168.0.206 00:00:aa:bb:cc:dd 
+dnsmasq-dhcp: 2875388644 requested options: 1:netmask, 3:router, 12:hostname, 17:root-path
+dnsmasq-dhcp: 2875388644 bootfile name: test.bin
+dnsmasq-dhcp: 2875388644 next server: 192.168.0.100
+dnsmasq-dhcp: 2875388644 sent size:  1 option: 53 message-type  5
+dnsmasq-dhcp: 2875388644 sent size:  4 option: 54 server-identifier  192.168.0.100
+dnsmasq-dhcp: 2875388644 sent size:  4 option: 51 lease-time  1h
+dnsmasq-dhcp: 2875388644 sent size:  4 option: 58 T1  30m
+dnsmasq-dhcp: 2875388644 sent size:  4 option: 59 T2  52m30s
+dnsmasq-dhcp: 2875388644 sent size:  4 option:  1 netmask  255.255.255.0
+dnsmasq-dhcp: 2875388644 sent size:  4 option: 28 broadcast  192.168.0.255
+dnsmasq-dhcp: 2875388644 sent size:  4 option:  3 router  192.168.0.100
+dnsmasq-tftp: sent /home/nm/tftp/test.bin to 192.168.0.206
+^Croot@nm-pc:/home/nm# 
+ 
