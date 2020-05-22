@@ -60,6 +60,7 @@ sudo python3 remote_command_execution_vulnerability.py
 For some reason I couldn't telnet into the router. It will refuse every request. then I changed my miwifi router as a repeater and connected to internet through another access point. Then I can telnet to by routers ip (192.168.31.7)
 
 telnet 192.168.31.7
+
 cd /tmp
 
 > ( I have tried the default firmware but it does not have luci included, and cant install using opkg because of mismatch dependencies. User:zorro have created another custom firmware, that is linked here.)
